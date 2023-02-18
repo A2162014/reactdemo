@@ -48,7 +48,7 @@ root.render(
     <>
         <h1 style={heading}>Welcome to {uid} world</h1> {/*inline css*/}
         <h2>This is fragment method!</h2>
-        <h3>highly recommended</h3>
+        <h3 className="heading">highly recommended</h3>
         <h3>{date}</h3>
         <h3> {h}:{m}:{s}</h3>
         <h3> {dt}/{mt}/{yr}</h3>
