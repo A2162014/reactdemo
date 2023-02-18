@@ -12,15 +12,19 @@ const date = Date()
 const obj = new Date() //object defining
 const h = obj.getHours()
 let greetings = ""
+const cssStyle={}
 if (h <= 12) {
     // alert("Good Morning!")
+    cssStyle.color="yellow"
     greetings = "Good Morning!"
 } else if (h > 12 && h <= 17) {
     // alert("Good Afternoon!")
     greetings = "Good Afternoon!"
+    cssStyle.color="red"
 } else {
     // alert("Good Evening!")
     greetings = "Good Evening!"
+    cssStyle.color="green"
 }
 const m = obj.getMinutes()
 const s = obj.getSeconds()
@@ -53,7 +57,7 @@ root.render(
         <h3>{date}</h3>
         <h3> {h}:{m}:{s}</h3>
         <h3> {dt}/{mt}/{yr}</h3>
-        <h3>{greetings}</h3>
+        <h3 style={cssStyle}>{greetings}</h3>
         {/* <img src={pic1} alt="" width={300} /> */}
         <img src="/public/logo512.png" alt="" />
         <img src={pic2} alt=""/>
