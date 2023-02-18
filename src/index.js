@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import pic1 from './Image_created_with_a_mobile_phone.png'
+// import pic1 from './Image_created_with_a_mobile_phone.png';
 import './style.css'
 const uid = "React" //strings
 // const place = "India" //strings
@@ -32,7 +32,8 @@ const heading = {
     fontFamily: "arial",
     backgroundColor: "yellow"
 }
-
+const pic2="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FCommons%3AQuality_images&psig=AOvVaw1cw0cOqomCBiMzjUvnXCcw&ust=1676828289315000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCCiaXOn_0CFQAAAAAdAAAAABAE"
+const link="https://www.google.com"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -53,8 +54,10 @@ root.render(
         <h3> {h}:{m}:{s}</h3>
         <h3> {dt}/{mt}/{yr}</h3>
         <h3>{greetings}</h3>
-        <img src={pic1} alt="" width={300} />
+        {/* <img src={pic1} alt="" width={300} /> */}
         <img src="/public/logo512.png" alt="" />
+        <img src={pic2} alt=""/>
+        <a href={link}>Google!</a>
         {/* <h1>Welcome to {place}!</h1>
         <h2>Number 1 is {num1}.</h2>
         <h2>Number 2 is {num2}.</h2>
