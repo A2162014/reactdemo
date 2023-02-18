@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import pic1 from './Image_created_with_a_mobile_phone.png'
 
 const uid = "React" //strings
 // const place = "India" //strings
@@ -46,6 +47,8 @@ root.render(
         <h3> {h}:{m}:{s}</h3>
         <h3> {dt}/{mt}/{yr}</h3>
         <h3>{greetings}</h3>
+        <img src={pic1} alt="" width={300} />
+        <img src="/public/logo512.png" alt="" />
         {/* <h1>Welcome to {place}!</h1>
         <h2>Number 1 is {num1}.</h2>
         <h2>Number 2 is {num2}.</h2>
