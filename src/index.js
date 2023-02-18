@@ -27,6 +27,12 @@ const s = obj.getSeconds()
 const dt = obj.getDate()
 const mt = obj.getMonth() + 1
 const yr = obj.getFullYear()
+const heading = {
+    color: "red",
+    fontFamily: "arial",
+    backgroundColor: "yellow"
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -40,7 +46,7 @@ root.render(
     //      <h3>not used a lot</h3>
     // </div>
     <>
-        <h1>Welcome to {uid} world</h1>
+        <h1 style={heading}>Welcome to {uid} world</h1> {/*inline css*/}
         <h2>This is fragment method!</h2>
         <h3>highly recommended</h3>
         <h3>{date}</h3>
