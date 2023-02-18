@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import pic1 from './Image_created_with_a_mobile_phone.png'
-
+import './style.css'
 const uid = "React" //strings
 // const place = "India" //strings
 // const num1 = prompt("Enter number 1") //number/integer
