@@ -40,6 +40,10 @@ const pic2="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.
 const link="https://www.google.com"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+function Comp(){
+    return <h3>Components</h3>
+}
+
 root.render(
     // [
     //     <h1>Welcome to React world</h1>,
@@ -62,6 +66,7 @@ root.render(
         <img src="/public/logo512.png" alt="" />
         <img src={pic2} alt=""/>
         <a href={link}>Google!</a>
+        <Comp/>
         {/* <h1>Welcome to {place}!</h1>
         <h2>Number 1 is {num1}.</h2>
         <h2>Number 2 is {num2}.</h2>
