@@ -1,5 +1,5 @@
 // import pic1 from './Image_created_with_a_mobile_phone.png';
-// import './style.css'
+import './style.css'
 
 // const uid = "React" //strings
 // // const place = "India" //strings
@@ -156,7 +156,8 @@ function App() {
     // }
     // const [state, setState] = useState("Hello Hooks!")
     // const [state, setState] = useState(0)
-    const [user, setUser] = useState("Hello")
+    // const [user, setUser] = useState("Hello")
+    const [fruit, setFruit] = useState("Fruits")
 
     // function test() {
     //     setState("Welcome to React hooks concept!")
@@ -168,9 +169,9 @@ function App() {
     //     // setState("Welcome to React hooks concept!")
     //     setState(state - 1)
     // }
-    function handler(e){
+    function handler(e) {
         // setUser("Single Page Application")
-        setUser(e.target.value)
+        setFruit(e.target.value)
     }
     return (
         <>
@@ -187,9 +188,15 @@ function App() {
             {/* <h3>{state}</h3> */}
             {/* <button onClick={increment}>+</button>
             <button onClick={decrement}>-</button> */}
-            <input type="text" value={user} onChange={handler}></input>
+            {/* <input type="text" value={user} onChange={handler}></input> */}
+            <select onChange={handler}>
+                <option>Banana</option>
+                <option>Apple</option>
+                <option>Grapes</option>
+                <option>Mangoes</option>
+            </select>
             <br></br>
-            {user}
+            <h3>You selected <span className='clr'>{fruit}</span></h3>
         </>
     )
 }
