@@ -79,19 +79,47 @@
 //         </>
 //     )
 // }
-const course = "ReactJS"
-const topics = "Single Page Application"
-const duration = "2 months"
+// export default Body
 
-function myName() {
-    let name = "Ashvath"
-    return name
+// const course = "ReactJS"
+// const topics = "Single Page Application"
+// const duration = "2 months"
+
+// function myName() {
+//     let name = "Ashvath"
+//     return name
+// }
+
+// function myLastName() {
+//     let lname = "Suresh"
+//     return lname
+// }
+
+// export default course
+// export { topics, duration, myName, myLastName }
+
+// function App(props){
+//     return(
+//         <>
+//             <h1> Hello {props.name}</h1>
+//             <h2> from {props.place}</h2>
+//         </>
+//     )
+// }
+
+// export default App
+
+import React from "react"
+
+class App extends React.Component {
+    render() {
+        return (
+            <>
+                <h2>Class Component example</h2>
+                <h2>Hello {this.props.name}</h2>
+            </>
+        )
+    }
 }
 
-function myLastName() {
-    let lname = "Suresh"
-    return lname
-}
-
-export default course
-export { topics, duration, myName, myLastName }
+export default App
