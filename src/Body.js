@@ -142,9 +142,16 @@ function App(){
     //     alert("Welcome to onMouseOut of React!")
     // }
     const course=()=>{
-        var val=document.getElementById('color').value
+        // var val=document.getElementById('color').value
         // alert("Color is " + val)
-        document.getElementById('bg').style.background=val
+        // document.getElementById('bg').style.background=val
+        document.getElementById('color').style.background='yellow'
+    }
+    const color2=()=>{
+        // var val=document.getElementById('color').value
+        // alert("Color is " + val)
+        // document.getElementById('bg').style.background=val
+        document.getElementById('color').style.background='green'
     }
     return (
         <>
@@ -156,7 +163,8 @@ function App(){
                 <option>blue</option>
                 <option>orange</option>
             </select> */}
-            <input type="color" id="color" onChange={course} />
+            {/* <input type="color" id="color" onChange={course} /> */}
+            <input type="text" id="color" onFocus={course} onBlur={color2}/>
         </>
     )
 }
