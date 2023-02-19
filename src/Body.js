@@ -154,12 +154,24 @@ function App() {
     //     // document.getElementById('bg').style.background=val
     //     document.getElementById('color').style.background='green'
     // }
-    const [state, setState] = useState("Hello Hooks")
-    
-    function test(){
-        setState("Welcome to React hooks concept!")
+    // const [state, setState] = useState("Hello Hooks!")
+    // const [state, setState] = useState(0)
+    const [user, setUser] = useState("Hello")
+
+    // function test() {
+    //     setState("Welcome to React hooks concept!")
+    // }
+    // function increment() {
+    //     setState(state + 1)
+    // }
+    // function decrement() {
+    //     // setState("Welcome to React hooks concept!")
+    //     setState(state - 1)
+    // }
+    function handler(e){
+        // setUser("Single Page Application")
+        setUser(e.target.value)
     }
-    
     return (
         <>
             {/* <button onClick={onClick}>onClick me!</button>
@@ -172,8 +184,12 @@ function App() {
             </select> */}
             {/* <input type="color" id="color" onChange={course} /> */}
             {/* <input type="text" id="color" onFocus={course} onBlur={color2}/> */}
-            <h3>{state}</h3>
-            <button onClick={test}>setState</button>
+            {/* <h3>{state}</h3> */}
+            {/* <button onClick={increment}>+</button>
+            <button onClick={decrement}>-</button> */}
+            <input type="text" value={user} onChange={handler}></input>
+            <br></br>
+            {user}
         </>
     )
 }
