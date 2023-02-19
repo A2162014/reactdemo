@@ -132,20 +132,31 @@ function App(){
     //     alert("Welcome to event of React!")
     // } 
     // arrow function
-    const onClick=()=>{
-        alert("Welcome to onClick of React!")
-    }
-    const onMouseOver=()=>{
-        alert("Welcome to onMouseOver of React!")
-    }
-    const onMouseOut=()=>{
-        alert("Welcome to onMouseOut of React!")
+    // const onClick=()=>{
+    //     alert("Welcome to onClick of React!")
+    // }
+    // const onMouseOver=()=>{
+    //     alert("Welcome to onMouseOver of React!")
+    // }
+    // const onMouseOut=()=>{
+    //     alert("Welcome to onMouseOut of React!")
+    // }
+    const course=()=>{
+        var val=document.getElementById('color').value
+        // alert("Color is " + val)
+        document.getElementById('bg').style.background=val
     }
     return (
         <>
-            <button onClick={onClick}>onClick me!</button>
+            {/* <button onClick={onClick}>onClick me!</button>
             <button onMouseOver={onMouseOver}>onMouseOver me!</button>
-            <button onMouseOut={onMouseOut}>onMouseOut me!</button>
+            <button onMouseOut={onMouseOut}>onMouseOut me!</button> */}
+            {/* <select id='color' onChange={course}>
+                <option>red</option>
+                <option>blue</option>
+                <option>orange</option>
+            </select> */}
+            <input type="color" id="color" onChange={course} />
         </>
     )
 }
