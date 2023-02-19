@@ -109,17 +109,45 @@
 
 // export default App
 
+// import React from "react"
+
+// class App extends React.Component {
+//     render() {
+//         return (
+//             <>
+//                 <h2>Class Component example</h2>
+//                 <h2>Hello {this.props.name}</h2>
+//             </>
+//         )
+//     }
+// }
+
+// export default App
+
 import React from "react"
 
-class App extends React.Component {
-    render() {
-        return (
-            <>
-                <h2>Class Component example</h2>
-                <h2>Hello {this.props.name}</h2>
-            </>
-        )
+function App(){
+    // normal function
+    // function test(){
+    //     alert("Welcome to event of React!")
+    // } 
+    // arrow function
+    const onClick=()=>{
+        alert("Welcome to onClick of React!")
     }
+    const onMouseOver=()=>{
+        alert("Welcome to onMouseOver of React!")
+    }
+    const onMouseOut=()=>{
+        alert("Welcome to onMouseOut of React!")
+    }
+    return (
+        <>
+            <button onClick={onClick}>onClick me!</button>
+            <button onMouseOver={onMouseOver}>onMouseOver me!</button>
+            <button onMouseOut={onMouseOut}>onMouseOut me!</button>
+        </>
+    )
 }
 
 export default App

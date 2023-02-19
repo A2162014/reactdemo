@@ -24,8 +24,9 @@ root.render(
         <h3>My last name is {body.myLastName()}</h3> */}
         {/* <App name = "Ashvath" place = "bangalore"/>
         <App name = "Barath" place = "chennai"/> */}
-        <App name="Ashvath" />
-        <App name="Barath" />
+        {/* <App name="Ashvath" />
+        <App name="Barath" /> */}
+        <App/>
         {/* <Header />
         <Body />
         <Footer /> */}
