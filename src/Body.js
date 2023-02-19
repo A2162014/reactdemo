@@ -124,9 +124,10 @@
 
 // export default App
 
-import React from "react"
+// import React from "react"
+import { useState } from "react"
 
-function App(){
+function App() {
     // normal function
     // function test(){
     //     alert("Welcome to event of React!")
@@ -141,18 +142,24 @@ function App(){
     // const onMouseOut=()=>{
     //     alert("Welcome to onMouseOut of React!")
     // }
-    const course=()=>{
-        // var val=document.getElementById('color').value
-        // alert("Color is " + val)
-        // document.getElementById('bg').style.background=val
-        document.getElementById('color').style.background='yellow'
+    // const course=()=>{
+    //     // var val=document.getElementById('color').value
+    //     // alert("Color is " + val)
+    //     // document.getElementById('bg').style.background=val
+    //     document.getElementById('color').style.background='yellow'
+    // }
+    // const color2=()=>{
+    //     // var val=document.getElementById('color').value
+    //     // alert("Color is " + val)
+    //     // document.getElementById('bg').style.background=val
+    //     document.getElementById('color').style.background='green'
+    // }
+    const [state, setState] = useState("Hello Hooks")
+    
+    function test(){
+        setState("Welcome to React hooks concept!")
     }
-    const color2=()=>{
-        // var val=document.getElementById('color').value
-        // alert("Color is " + val)
-        // document.getElementById('bg').style.background=val
-        document.getElementById('color').style.background='green'
-    }
+    
     return (
         <>
             {/* <button onClick={onClick}>onClick me!</button>
@@ -164,7 +171,9 @@ function App(){
                 <option>orange</option>
             </select> */}
             {/* <input type="color" id="color" onChange={course} /> */}
-            <input type="text" id="color" onFocus={course} onBlur={color2}/>
+            {/* <input type="text" id="color" onFocus={course} onBlur={color2}/> */}
+            <h3>{state}</h3>
+            <button onClick={test}>setState</button>
         </>
     )
 }
