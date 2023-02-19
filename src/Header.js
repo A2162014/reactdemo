@@ -1,5 +1,5 @@
 import './style.css'
-function Header(){
+function Header() {
     return <h1 className='top'>External Header Component!</h1>
 }
 export default Header
