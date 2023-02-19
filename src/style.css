@@ -1,8 +1,30 @@
-h3 {
+/* h3 {
     color: white;
     background-color: black;
     padding: 20px;
 }
 .heading{
    background-color: red; 
+} */
+.top {
+    text-align: center;
+    background-color: yellow;
+    padding: 15px;
+    font-family: arial;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    font-family: Helvetica;
+    color: white;
+}
+
+.body {
+    text-align: left;
+    background-color: coral;
+    padding: 10px;
+    font-family: Helvetica;
+    color: white;
 }

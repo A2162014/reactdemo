@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import pic1 from './Image_created_with_a_mobile_phone.png';
+
+import pic1 from './Image_created_with_a_mobile_phone.png';
 import './style.css'
+import Header from './Header.js'
+import Footer from './Footer.js'
+
 const uid = "React" //strings
 // const place = "India" //strings
 // const num1 = prompt("Enter number 1") //number/integer
@@ -36,12 +40,13 @@ const heading = {
     fontFamily: "arial",
     backgroundColor: "yellow"
 }
-const pic2="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FCommons%3AQuality_images&psig=AOvVaw1cw0cOqomCBiMzjUvnXCcw&ust=1676828289315000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCCiaXOn_0CFQAAAAAdAAAAABAE"
+// const pic2="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FCommons%3AQuality_images&psig=AOvVaw1cw0cOqomCBiMzjUvnXCcw&ust=1676828289315000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCCiaXOn_0CFQAAAAAdAAAAABAE"
 const link="https://www.google.com"
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function Comp(){
-    return <h3>Components</h3>
+    return <h3>Internal Components!</h3>
 }
 
 root.render(
@@ -55,22 +60,28 @@ root.render(
     //      <h3>not used a lot</h3>
     // </div>
     <>
-        <h1 style={heading}>Welcome to {uid} world</h1> {/*inline css*/}
-        <h2>This is fragment method!</h2>
-        <h3 className="heading">highly recommended</h3>
-        <h3>{date}</h3>
-        <h3> {h}:{m}:{s}</h3>
-        <h3> {dt}/{mt}/{yr}</h3>
-        <h3 style={cssStyle}>{greetings}</h3>
-        {/* <img src={pic1} alt="" width={300} /> */}
-        <img src="/public/logo512.png" alt="" />
-        <img src={pic2} alt=""/>
-        <a href={link}>Google!</a>
-        <Comp/>
-        {/* <h1>Welcome to {place}!</h1>
-        <h2>Number 1 is {num1}.</h2>
-        <h2>Number 2 is {num2}.</h2>
-        <h2>Total is {total}.</h2>
-        <h2>Average is {avg}.</h2> */}
+        <Header/>
+        <div className="body">
+            <h1 style={heading}>Welcome to {uid} world</h1> {/*inline css*/}
+            <p>
+                <h2>This is fragment method!</h2>
+                <h3 className="heading">highly recommended</h3>
+                <h3>{date}</h3>
+                <h3> {h}:{m}:{s}</h3>
+                <h3> {dt}/{mt}/{yr}</h3>
+                <h3 style={cssStyle}>{greetings}</h3>
+                <img src={pic1} alt="" width={300} />
+                {/* <img src="/public/logo512.png" alt="" /> */}
+                {/* <img src={pic2} alt=""/> */}
+                <a href={link}>Google!</a>
+                <Comp/>
+                {/* <h1>Welcome to {place}!</h1>
+                <h2>Number 1 is {num1}.</h2>
+                <h2>Number 2 is {num2}.</h2>
+                <h2>Total is {total}.</h2>
+                <h2>Average is {avg}.</h2> */}
+            </p>
+        </div>
+        <Footer/>
     </>
 )
