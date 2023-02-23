@@ -200,21 +200,36 @@ import './style.css'
 //         </>
 //     )
 // }
-import { useState } from 'react'
+// import { useState } from 'react'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import About from './About.js'
+import Services from './Services.js'
+import Contact from './Contact.js'
 function App() {
     // const names = ['Anil','Sunil','Pratap','Sunitha','Susheel']
-    const [state, setState] = useState('')
-    const test = (e) => {
-        setState(e.target.value)
-    }
+    // const [state, setState] = useState('')
+    // const test = (e) => {
+    //     setState(e.target.value)
+    // }
     return (
+        // <>
+        //     <h2>Example of map</h2>
+        //     <br/>
+        //     {/* {names.map((value)=>{
+        //     return <li>{value}</li>
+        //     })} */}
+        //     <input type="text" placeholder='first name' value={state} onChange={test}/>
+        // </>
         <>
-            <h2>Example of map</h2>
-            <br/>
-            {/* {names.map((value)=>{
-            return <li>{value}</li>
-            })} */}
-            <input type="text" placeholder='first name' value={state} onChange={test}/>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<h1>Routing Example</h1>} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/services' element={<Services />} />
+                    <Route path='/contact' element={<Contact />} />
+                </Routes>
+            </BrowserRouter>
         </>
     )
 }
