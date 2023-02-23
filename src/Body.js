@@ -125,80 +125,97 @@ import './style.css'
 // export default App
 
 // import React from "react"
-import { useState } from "react"
+// import { useState } from "react"
 
+// function App() {
+//     // normal function
+//     // function test(){
+//     //     alert("Welcome to event of React!")
+//     // } 
+//     // arrow function
+//     // const onClick=()=>{
+//     //     alert("Welcome to onClick of React!")
+//     // }
+//     // const onMouseOver=()=>{
+//     //     alert("Welcome to onMouseOver of React!")
+//     // }
+//     // const onMouseOut=()=>{
+//     //     alert("Welcome to onMouseOut of React!")
+//     // }
+//     // const course=()=>{
+//     //     // var val=document.getElementById('color').value
+//     //     // alert("Color is " + val)
+//     //     // document.getElementById('bg').style.background=val
+//     //     document.getElementById('color').style.background='yellow'
+//     // }
+//     // const color2=()=>{
+//     //     // var val=document.getElementById('color').value
+//     //     // alert("Color is " + val)
+//     //     // document.getElementById('bg').style.background=val
+//     //     document.getElementById('color').style.background='green'
+//     // }
+//     // const [state, setState] = useState("Hello Hooks!")
+//     // const [state, setState] = useState(0)
+//     // const [user, setUser] = useState("Hello")
+//     const [fruit, setFruit] = useState("Fruits")
+
+//     // function test() {
+//     //     setState("Welcome to React hooks concept!")
+//     // }
+//     // function increment() {
+//     //     setState(state + 1)
+//     // }
+//     // function decrement() {
+//     //     // setState("Welcome to React hooks concept!")
+//     //     setState(state - 1)
+//     // }
+//     function handler(e) {
+//         // setUser("Single Page Application")
+//         setFruit(e.target.value)
+//     }
+//     return (
+//         <>
+//             {/* <button onClick={onClick}>onClick me!</button>
+//             <button onMouseOver={onMouseOver}>onMouseOver me!</button>
+//             <button onMouseOut={onMouseOut}>onMouseOut me!</button> */}
+//             {/* <select id='color' onChange={course}>
+//                 <option>red</option>
+//                 <option>blue</option>
+//                 <option>orange</option>
+//             </select> */}
+//             {/* <input type="color" id="color" onChange={course} /> */}
+//             {/* <input type="text" id="color" onFocus={course} onBlur={color2}/> */}
+//             {/* <h3>{state}</h3> */}
+//             {/* <button onClick={increment}>+</button>
+//             <button onClick={decrement}>-</button> */}
+//             {/* <input type="text" value={user} onChange={handler}></input> */}
+//             <select onChange={handler}>
+//                 <option>Banana</option>
+//                 <option>Apple</option>
+//                 <option>Grapes</option>
+//                 <option>Mangoes</option>
+//             </select>
+//             <br></br>
+//             <h3>You selected <span className='clr'>{fruit}</span></h3>
+//         </>
+//     )
+// }
+import { useState } from 'react'
 function App() {
-    // normal function
-    // function test(){
-    //     alert("Welcome to event of React!")
-    // } 
-    // arrow function
-    // const onClick=()=>{
-    //     alert("Welcome to onClick of React!")
-    // }
-    // const onMouseOver=()=>{
-    //     alert("Welcome to onMouseOver of React!")
-    // }
-    // const onMouseOut=()=>{
-    //     alert("Welcome to onMouseOut of React!")
-    // }
-    // const course=()=>{
-    //     // var val=document.getElementById('color').value
-    //     // alert("Color is " + val)
-    //     // document.getElementById('bg').style.background=val
-    //     document.getElementById('color').style.background='yellow'
-    // }
-    // const color2=()=>{
-    //     // var val=document.getElementById('color').value
-    //     // alert("Color is " + val)
-    //     // document.getElementById('bg').style.background=val
-    //     document.getElementById('color').style.background='green'
-    // }
-    // const [state, setState] = useState("Hello Hooks!")
-    // const [state, setState] = useState(0)
-    // const [user, setUser] = useState("Hello")
-    const [fruit, setFruit] = useState("Fruits")
-
-    // function test() {
-    //     setState("Welcome to React hooks concept!")
-    // }
-    // function increment() {
-    //     setState(state + 1)
-    // }
-    // function decrement() {
-    //     // setState("Welcome to React hooks concept!")
-    //     setState(state - 1)
-    // }
-    function handler(e) {
-        // setUser("Single Page Application")
-        setFruit(e.target.value)
+    // const names = ['Anil','Sunil','Pratap','Sunitha','Susheel']
+    const [state, setState] = useState('')
+    const test = (e) => {
+        setState(e.target.value)
     }
     return (
         <>
-            {/* <button onClick={onClick}>onClick me!</button>
-            <button onMouseOver={onMouseOver}>onMouseOver me!</button>
-            <button onMouseOut={onMouseOut}>onMouseOut me!</button> */}
-            {/* <select id='color' onChange={course}>
-                <option>red</option>
-                <option>blue</option>
-                <option>orange</option>
-            </select> */}
-            {/* <input type="color" id="color" onChange={course} /> */}
-            {/* <input type="text" id="color" onFocus={course} onBlur={color2}/> */}
-            {/* <h3>{state}</h3> */}
-            {/* <button onClick={increment}>+</button>
-            <button onClick={decrement}>-</button> */}
-            {/* <input type="text" value={user} onChange={handler}></input> */}
-            <select onChange={handler}>
-                <option>Banana</option>
-                <option>Apple</option>
-                <option>Grapes</option>
-                <option>Mangoes</option>
-            </select>
-            <br></br>
-            <h3>You selected <span className='clr'>{fruit}</span></h3>
+            <h2>Example of map</h2>
+            <br/>
+            {/* {names.map((value)=>{
+            return <li>{value}</li>
+            })} */}
+            <input type="text" placeholder='first name' value={state} onChange={test}/>
         </>
     )
 }
-
 export default App
