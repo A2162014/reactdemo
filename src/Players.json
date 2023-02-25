@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Sachin",
+        "pic": "https://upload.wikimedia.org/wikipedia/commons/2/25/Sachin_Tendulkar_at_MRF_Promotion_Event.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Kholi",
+        "pic": "https://im.rediff.com/cricket/2023/jan/17kohli1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Dhoni",
+        "pic": "https://feeds.abplive.com/onecms/images/uploaded-images/2023/02/20/56c70f393e65f3fbc15b4ece31b7be6c167689957611424_original.jpg?impolicy=abp_cdn&imwidth=650"
+    },
+    {
+        "id": 4,
+        "name": "Rohit",
+        "pic": "https://images.news18.com/ibnlive/uploads/2022/09/rohit-sharma-angry-ap.jpg"
+    }
+]

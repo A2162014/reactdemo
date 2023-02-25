@@ -202,7 +202,7 @@ import './style.css'
 // }
 // import { useState } from 'react'
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import About from './About.js'
 import Services from './Services.js'
 import Contact from './Contact.js'
@@ -223,6 +223,9 @@ function App() {
         // </>
         <>
             <BrowserRouter>
+                <Link href='./About.js'></Link>
+                <Link href='./Services.js'></Link>
+                <Link href='./Contact.js'></Link>
                 <Routes>
                     <Route path='/' element={<h1>Routing Example</h1>} />
                     <Route path='/about' element={<About />} />
