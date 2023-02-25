@@ -5,8 +5,8 @@ function App() {
     return (
         <>
             <h2>Importing JSON data</h2>
-            {players.map((player)=>{
-                return(
+            {players.map((player) => {
+                return (
                     <>
                         <div>
                             <br></br>
