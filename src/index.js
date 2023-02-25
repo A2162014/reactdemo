@@ -6,7 +6,9 @@ import ReactDOM from "react-dom/client";
 // import Footer from './Footer.js'
 // import course, { topics, duration, myName, myLastName } from "./Body";
 // import * as body from './Body'
-import App from "./Body";
+// import App from "./Body";
+import App from './App.js'
+import './style.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -26,7 +28,7 @@ root.render(
         <App name = "Barath" place = "chennai"/> */}
         {/* <App name="Ashvath" />
         <App name="Barath" /> */}
-        <App/>
+        <App />
         {/* <Header />
         <Body />
         <Footer /> */}
